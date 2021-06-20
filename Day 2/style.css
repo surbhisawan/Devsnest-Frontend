@@ -1,0 +1,25 @@
+h1
+{
+    
+    text-align: center;
+    background-color: burlywood;
+    color: black;
+    text-shadow:2px 5px 1px white;
+}
+
+#hello
+{
+    background-image: url("pap.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+} 
+
+body
+{
+    padding: 25px;
+    margin: 25px 100px;
+    border : 6px double black;
+    font-family: 'Viaoda Libre', cursive;
+    background-color: blanchedalmond
+}
