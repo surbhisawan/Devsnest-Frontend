@@ -1,0 +1,51 @@
+.container
+{
+    margin: 50px;
+    padding: 5px;
+    border: 6px double black;
+    background-color: rgb(233, 224, 221);
+}
+
+.heading
+{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Benne', serif;
+}
+
+#image
+{
+    float: right;
+}
+
+
+h1
+{
+    text-shadow: 2px 8px 2px grey;
+    background-image: linear-gradient(pink,orange);
+}
+
+#email
+{
+    border-bottom: 2px double black;
+}
+
+
+
+h2
+{
+    color: black;
+    text-shadow: 2px 5px 2px grey;
+    font-size: 200%;
+    font-family: 'Benne', serif;
+    border-bottom: 2px solid black;
+    background-image: linear-gradient(to left ,skyblue,pink);
+}
+}
+
+h4
+{
+    font-family: 'Benne', serif;
+    color: black;
+    font-family: 'Benne', serif;   
+}
