@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@465&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Comfortaa", cursive;
+  background-attachment: fixed;
+  background-image: radial-gradient(
+      circle at 82% 63%,
+      rgba(183, 183, 183, 0.09) 0%,
+      rgba(183, 183, 183, 0.09) 84%,
+      transparent 84%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 88% 98%,
+      rgba(232, 232, 232, 0.07) 0%,
+      rgba(232, 232, 232, 0.07) 15%,
+      transparent 15%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 77% 83%,
+      rgba(252, 252, 252, 0.05) 0%,
+      rgba(252, 252, 252, 0.05) 5%,
+      transparent 5%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 64% 0%,
+      rgba(140, 140, 140, 0.05) 0%,
+      rgba(140, 140, 140, 0.05) 54%,
+      transparent 54%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 57% 86%,
+      rgba(241, 241, 241, 0.07) 0%,
+      rgba(241, 241, 241, 0.07) 80%,
+      transparent 80%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 17% 93%,
+      rgba(68, 68, 68, 0.05) 0%,
+      rgba(68, 68, 68, 0.05) 82%,
+      transparent 82%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(10, 10, 10, 0.02) 0%,
+      rgba(10, 10, 10, 0.02) 13%,
+      transparent 13%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(48, 62, 175), rgb(254, 18, 105));
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+header {
+  margin-top: 1rem;
+  font-size: 2em;
+  font-weight: 700;
+}
+.input-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1em;
+}
+
+.input-container input {
+  height: 2.4rem;
+  width: 50%;
+  background: rgba(0, 191, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  outline: none;
+  font-size: 1.2em;
+  transition: 400ms all;
+}
+.input-container input:focus {
+  background: rgba(255, 255, 255, 0.507);
+
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+}
+
+.input-container button {
+  height: 2.4rem;
+  width: 4rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.input-container button:hover {
+  background: white;
+  color: black;
+}
+.todoitem {
+  height: auto;
+  width: 80%;
+  margin: 4px;
+  font-size: 1.2em;
+  color: white;
+  padding: 0.4em;
+  float: left;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.todolist {
+  padding: 2em;
+  width: 80%;
+  min-width: fit-content;
+  /* min-width: 400px; */
+
+  height: auto;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(92, 92, 92, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.itemcontainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.delete-btn {
+  margin: auto 2px;
+  height: fit-content;
+  padding: 0.4em;
+  font-size: 1.2em;
+  float: right;
+  background: rgba(255, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.complete-btn {
+  height: fit-content;
+  margin: auto 2px;
+  font-size: 1.2em;
+  padding: 0.4em;
+  width: fit-content;
+  float: right;
+  background: rgba(0, 255, 70, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.delete-btn:hover,
+.complete-btn:hover {
+  opacity: 0.8;
+}
+
+.todoitem.completed {
+  color: black;
+  text-decoration: line-through;
+}
+.completed {
+  background: rgba(23, 255, 14, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
