@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #504e6a;
+}
+.container {
+  width: 60%;
+  position: relative;
+}
+.score {
+  position: absolute;
+  top: -5vh;
+  left: 50%;
+  letter-spacing: 0.4em;
+  font-weight: 700;
+  transform: translateX(-50%);
+  height: 10vh;
+  width: auto;
+  font-size: 2em;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+}
+
+.cards {
+  width: auto;
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 2em;
+  /* place-content: center; */
+  gap: 2em;
+}
+
+.card {
+  position: relative;
+  height: 18vh;
+  width: auto;
+  z-index: 0;
+  /* padding: 30% 0; */
+  user-select: none;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  border-radius: 1em;
+  background: #504e6a;
+  box-shadow: 5px 5px 16px #363447, -5px -5px 16px #6a688d;
+}
+.front-card,
+.back-card {
+  display: flex;
+  position: absolute;
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  font-size: 4rem;
+  box-shadow: inherit;
+}
+.front-card {
+  background: inherit;
+  color: black;
+}
+.back-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: inherit;
+  transform: rotateY(180deg);
+  font-family: "Bebas Neue", cursive;
+  color: black;
+}
+
+.card.show {
+  /* opacity: 0.9;
+  cursor: pointer; */
+  transform: rotateY(180deg);
+}
+
+.disabled {
+  pointer-events: none;
+}
