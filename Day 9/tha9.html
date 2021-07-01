@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="THA9.JS"></script>
+    <link rel="stylesheet" href="THA9.CSS">
+</head>
+
+<body onafterprint="myFunction()">
+
+    <!-- <img src="image.gif" id = "disapper" onerror="disapper()"> -->
+
+    <div class="main">
+        <div class="header">
+            <h1>Let's Play!</h1>
+        </div>
+        <div class="block-count">
+            <p>Active Blocks Count</p>
+            <p id="active-blocks">0</p>
+            <p>Inactive blocks Count</p>
+            <p id="inactive-blocks">16</p>
+        </div>
+        <div class="main-div">
+            <div id="text-area">
+                <p id="text">Click on the blocks to play with the counters..Click all of them to win!!</p>
+                <p id="safeTimerDisplay">TIMER</p>
+                <button class="button" id="btn1" onclick="start(this.id)">Let's Go</button>
+            </div>
+            <div id="show-div">
+                <div class="box-start" id="box-start">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="modal">
+    <div class="modal_contents">
+        <p>hurray you won!</p>
+        <button>Close</button>
+    </div>
+    </div> -->
+
+</body>
+
+</html>
