@@ -1,0 +1,120 @@
+body
+{
+    background-color:  #E8E8E8;
+
+}
+/* .main{
+    display: inline;
+} */
+.main-div
+{
+    display: flex;
+    /* align-items: flex-start; */
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-grow: initial; */
+}
+#show-div
+{
+    display: none;
+}
+#safeTimerDisplay{
+    color: red;
+    border-width: 2px;
+    font-size: 50px;
+    border-style:dotted;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-style: dotted;
+    border-color: lightsalmon   ;
+}
+#text-area{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box-start{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#text{
+    color: maroon;
+    display: inline;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background: brown;
+    border-color: orange;
+    border-style: solid;
+    display: inline-block;
+}
+.box:hover {
+    background-color: maroon;
+  }
+.new-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.header
+{
+    background-color: #D3D3D3;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.block-count
+{
+    background-color: #D3D3D3;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
